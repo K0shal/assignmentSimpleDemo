@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+body {
+	font-family: Arial, sans-serif;
+	background-color: white;
+}
+
+@keyframes FadeIn {
+	0% {
+		opacity: 0;
+		visibility: hidden;
+	}
+	100% {
+		opacity: 100%;
+		visibility: visible;
+	}
+}
+@keyframes FadeOut {
+	0% {
+		opacity: 100%;
+		visibility: visible;
+	}
+	100% {
+		visibility: hidden;
+		opacity: 0;
+	}
+}
+
+.fadeIn {
+	animation: FadeIn 0.5s forwards;
+}
+.fadeOut {
+	animation: FadeOut 0.5s forwards;
+}
+@keyframes GoUp {
+	0% {
+		top: 12rem;
+		opacity: 0;
+	}
+	100% {
+		opacity: 100%;
+	}
+}
+@keyframes GoDown {
+	0% {
+		opacity: 100%;
+	}
+	100% {
+		opacity: 0;
+		top: 12rem;
+	}
+}
+
+.goUp {
+	animation: GoUp 0.4s forwards;
+}
+.goDown {
+	animation: GoDown 0.4s forwards;
+}
